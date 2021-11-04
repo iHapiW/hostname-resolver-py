@@ -3,7 +3,7 @@ A Project to resolve hostname and receive IP
 
 # Installation
 
-`git clone https://github.com/ihapiw/hostname-resolver.git`
+`git clone https://github.com/ihapiw/hostname_resolver.git`
 
 Head into the hostname-resolver folder
 
@@ -11,6 +11,6 @@ Head into the hostname-resolver folder
 
 then run application with
 
-`python app.py`
+`python resolve.py`
 
 # Then Enjoy The App :)
