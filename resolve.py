@@ -40,7 +40,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Letting Controller , Control App :)
-    DNSServer = args.dns
-    Hostname = args.Hostname
+    dns_server = args.dns
+    hostname = args.Hostname
     
-    cs.get_ip(Hostname,DNSServer)
+    cs.get_ip(hostname,dns_server)

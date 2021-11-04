@@ -2,9 +2,9 @@ from socket import gaierror
 from struct import error as e
 
 from model.stdio import error, success
-from model import connection as c
+from model import Connection as c
 
-#Connection Model Handler
+# Connection Model Handler
 def get_ip(hostname : str, dnsserver : str):
     try:
         connection = c.connection(dnsserver)

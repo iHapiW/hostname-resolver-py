@@ -3,7 +3,7 @@ from termcolor import colored
 from colorama import init
 init()
 
-#Initializing Custom Input Output Function For More Coloful + Readable UI
+# Initializing Custom Input Output Function For More Coloful + Readable UI
 
 def success(title,text : str):
     print(colored(figlet_format("[  "+title+"  ]"),"green"))
