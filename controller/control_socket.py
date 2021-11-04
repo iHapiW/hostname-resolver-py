@@ -1,5 +1,5 @@
 from socket import gaierror
-from struct import error
+from struct import error as e
 
 from model.stdio import error, success
 from model import connection as c
@@ -16,9 +16,8 @@ def get_ip(hostname : str, dnsserver : str):
     Class = {answer.dns_class}
     TTL = {answer.ttl}
     Address = {answer.address}
-}}
-""")
+}}""")
     except gaierror:
         error("Invalid DNS")
-    except error:
+    except e:
         error("Host Not Found")
