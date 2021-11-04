@@ -13,4 +13,16 @@ then run application with
 
 `python resolve.py`
 
+# Usage
+
+`python resolve.py Hostname`
+
+to specify the DNS IP:
+
+`python resolve.py Hostname -d DNS-IP`
+
+or
+
+`python resolve.py Hostname -dns DNS-IP`
+
 # Then Enjoy The App :)

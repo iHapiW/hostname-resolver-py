@@ -2,12 +2,12 @@ from socket import gaierror
 from struct import error as e
 
 from model.stdio import error, success
-from model import Connection as c
+from model.connection import Connection
 
 # Connection Model Handler
 def get_ip(hostname : str, dnsserver : str):
     try:
-        connection = c.connection(dnsserver)
+        connection = Connection(dnsserver)
         packet = connection.make_packet(hostname.strip())
         result = connection.iopacket(packet)
         answer = connection.analyze_packet(packet,result)
